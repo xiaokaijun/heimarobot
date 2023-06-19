@@ -4,6 +4,10 @@
 
 The code of heimarobot Python Library is released under the MIT License. There is no limitation for both academic and commercial usage.
 
+Heimarobot Python Library is an artificial intelligence learning library, including mainstream advanced artificial intelligence libraries, such as InsightFace, yolov8, paddleocr, etc.
+
+
+
 本项目具备如下推理功能：
 
 - 人脸检测
@@ -15,6 +19,26 @@ The code of heimarobot Python Library is released under the MIT License. There i
 B站演示地址: https://space.bilibili.com/485304569
 
 ## 安装
+
+安装opencv
+
+```python
+pip install opencv-python-headless==4.6.0.66
+pip install opencv-python==4.6.0.66
+pip install opencv-contrib-python==4.6.0.66
+```
+
+安装onnxruntime
+
+```python
+pip install onnxruntime
+```
+
+若你的电脑支持gpu,可以进入如下安装
+
+```python
+pip install onnxruntime-gpu
+```
 
 pip安装
 
@@ -29,18 +53,6 @@ pip install heimarobot==0.0.3 -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 
-
-安装onnxruntime
-
-```python
-pip install onnxruntime
-```
-
-若你的电脑支持gpu,可以进入如下安装
-
-```python
-pip install onnxruntime-gpu
-```
 
 
 
