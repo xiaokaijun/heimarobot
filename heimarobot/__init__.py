@@ -11,6 +11,15 @@ except ImportError:
         "Unable to import dependency onnxruntime. "
     )
 
-__version__ = '0.0.1'
+__version__ = '0.0.3'
+
+
+from .face_attribute import *
+from .face_detection import *
+from .face_landmark import *
+from .face_recognition import *
+from .face_swapper import *
+from .utils import *
+
 
 

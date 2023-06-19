@@ -1,7 +1,6 @@
-import insightface
-from face_detection import FaceDetection
-from insightface.app.common import Face
-from face_recognition import FaceRecognition
+import heimarobot.insightface as insightface
+from heimarobot.insightface.app.common import Face
+from .face_recognition import FaceRecognition
 
 class FaceSwapper:
 

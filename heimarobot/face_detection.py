@@ -1,5 +1,5 @@
-import insightface
-from insightface.app.common import Face
+import heimarobot.insightface as insightface
+from heimarobot.insightface.app.common import Face
 
 class FaceDetection:
     def __init__(self):
