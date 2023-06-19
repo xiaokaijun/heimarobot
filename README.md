@@ -25,7 +25,7 @@ pip install heimarobot==0.0.3
 若安装失败，请指定安装路径
 
 ```python
-pip install heimarobot==0.0.3 -i https://pypi.org/project
+pip install heimarobot==0.0.3 -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 
