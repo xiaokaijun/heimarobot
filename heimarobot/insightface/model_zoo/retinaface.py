@@ -207,7 +207,7 @@ class RetinaFace:
     def detect(self, img, input_size = None, max_num=0, metric='default'):
         assert input_size is not None or self.input_size is not None
         input_size = self.input_size if input_size is None else input_size
-        print(input_size)    
+        
         im_ratio = float(img.shape[0]) / img.shape[1]
         model_ratio = float(input_size[1]) / input_size[0]
         if im_ratio>model_ratio:

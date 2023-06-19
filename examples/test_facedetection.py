@@ -1,4 +1,4 @@
-from face_detection import FaceDetection
+from heimarobot import FaceDetection
 import cv2 as cv
 import numpy as np
 

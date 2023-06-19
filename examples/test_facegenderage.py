@@ -1,5 +1,4 @@
-from face_recognition import FaceRecognition
-from face_attribute import FaceAttribute
+from heimarobot  import FaceAttribute
 import cv2 as cv
 import numpy as np
 

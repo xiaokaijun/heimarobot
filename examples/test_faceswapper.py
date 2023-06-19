@@ -1,4 +1,4 @@
-from face_swapper import FaceSwapper
+from heimarobot import FaceSwapper
 
 import cv2 as cv
 import numpy as np
