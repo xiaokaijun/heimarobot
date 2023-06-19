@@ -234,3 +234,17 @@ pip install opencv-contrib-python==4.6.0.66
 
 
 
+本项目参考以下工程:
+
+[InsightFace](https://insightface.ai/)
+
+[PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
+
+
+
+
+
+
+
+
+
