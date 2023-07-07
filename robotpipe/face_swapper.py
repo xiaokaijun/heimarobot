@@ -1,5 +1,5 @@
-import heimarobot.insightface as insightface
-from heimarobot.insightface.app.common import Face
+import robotpipe.insightface as insightface
+from robotpipe.insightface.app.common import Face
 from .face_recognition import FaceRecognition
 
 class FaceSwapper:

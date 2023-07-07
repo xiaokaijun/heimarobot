@@ -1,6 +1,6 @@
-import heimarobot.insightface as insightface
+import robotpipe.insightface as insightface
 from .face_detection import FaceDetection
-from heimarobot.insightface.app.common import Face
+from robotpipe.insightface.app.common import Face
 
 class FaceLandmark:
 

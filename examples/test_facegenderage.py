@@ -1,4 +1,4 @@
-from heimarobot  import FaceAttribute
+from robotpipe  import FaceAttribute
 import cv2 as cv
 import numpy as np
 

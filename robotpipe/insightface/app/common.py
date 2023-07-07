@@ -47,3 +47,18 @@ class Face(dict):
         if self.gender is None:
             return None
         return 'M' if self.gender==1 else 'F'
+    
+    def __getstate__(self):
+        return {'embedding': self.embedding,
+                "bbox":self.bbox,
+                "kps":self.kps,
+                "det_score":self.det_score
+                }
+
+    def __setstate__(self, values):
+        embedding = values['embedding']
+        bbox = values['bbox']
+        kps = values['embedding']
+        det_score = values['det_score']
+
+        self.__init__(bbox=bbox, kps=kps, det_score=det_score,embedding=embedding)

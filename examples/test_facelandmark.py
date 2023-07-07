@@ -1,7 +1,7 @@
-from heimarobot  import FaceLandmark
+from robotpipe  import FaceLandmark
 import cv2 as cv
 import numpy as np
-from heimarobot import draw_faces,draw_landmarks
+from robotpipe import draw_faces,draw_landmarks
 
 if __name__ == '__main__':
     face_attr = FaceLandmark()

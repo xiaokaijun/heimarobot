@@ -74,7 +74,7 @@ def get_default_provider_options():
     return None
 
 def get_model(name, **kwargs):
-    root = kwargs.get('root', '~/.heimarobot')
+    root = kwargs.get('root', '~/.robotpipe')
     root = os.path.expanduser(root)
     model_root = osp.join(root, 'models')
     allow_download = kwargs.get('download', False)

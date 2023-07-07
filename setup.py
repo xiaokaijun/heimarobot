@@ -36,7 +36,7 @@ except (IOError, ImportError, ModuleNotFoundError):
 
 #import pypandoc
 #long_description = pypandoc.convert('README.md', 'rst')
-VERSION = find_version('heimarobot', '__init__.py')
+VERSION = find_version('robotpipe', '__init__.py')
 
 requirements = [
     'numpy',
@@ -56,31 +56,31 @@ requirements = [
 ]
 
 extensions = [
-        Extension("heimarobot.insightface.thirdparty.face3d.mesh.cython.mesh_core_cython", 
-            ["heimarobot/insightface/thirdparty/face3d/mesh/cython/mesh_core_cython.pyx", "heimarobot/insightface/thirdparty/face3d/mesh/cython/mesh_core.cpp"], language='c++'),
+        Extension("robotpipe.insightface.thirdparty.face3d.mesh.cython.mesh_core_cython", 
+            ["robotpipe/insightface/thirdparty/face3d/mesh/cython/mesh_core_cython.pyx", "robotpipe/insightface/thirdparty/face3d/mesh/cython/mesh_core.cpp"], language='c++'),
         ]
-data_images = list(glob.glob('heimarobot/insightface/data/images/*.jpg'))
-data_images += list(glob.glob('heimarobot/insightface/data/images/*.png'))
+data_images = list(glob.glob('robotpipe/insightface/data/images/*.jpg'))
+data_images += list(glob.glob('robotpipe/insightface/data/images/*.png'))
 
-data_mesh = list(glob.glob('heimarobot/insightface/thirdparty/face3d/mesh/cython/*.h'))
-data_mesh += list(glob.glob('heimarobot/insightface/thirdparty/face3d/mesh/cython/*.c'))
-data_mesh += list(glob.glob('heimarobot/insightface/thirdparty/face3d/mesh/cython/*.py*'))
+data_mesh = list(glob.glob('robotpipe/insightface/thirdparty/face3d/mesh/cython/*.h'))
+data_mesh += list(glob.glob('robotpipe/insightface/thirdparty/face3d/mesh/cython/*.c'))
+data_mesh += list(glob.glob('robotpipe/insightface/thirdparty/face3d/mesh/cython/*.py*'))
 
-data_objects = list(glob.glob('heimarobot/insightface/data/objects/*.pkl'))
+data_objects = list(glob.glob('robotpipe/insightface/data/objects/*.pkl'))
 
-data_files = [ ('heimarobot/insightface/data/images', data_images) ]
-data_files += [ ('heimarobot/insightface/data/objects', data_objects) ]
-data_files += [ ('heimarobot/insightface/thirdparty/face3d/mesh/cython', data_mesh) ]
+data_files = [ ('robotpipe/insightface/data/images', data_images) ]
+data_files += [ ('robotpipe/insightface/data/objects', data_objects) ]
+data_files += [ ('robotpipe/insightface/thirdparty/face3d/mesh/cython', data_mesh) ]
 
 ext_modules=cythonize(extensions)
 setup(
     # Metadata
-    name='heimarobot',
+    name='robotpipe',
     version=VERSION,
-    author='heimarobot Contributors',
+    author='robotpipe Contributors',
     author_email='xiaokaijun5027@163.com',
-    url='https://github.com/xiaokaijun/heimarobot',
-    description='Heimarobot Python Library',
+    url='https://github.com/xiaokaijun/robotpipe',
+    description='robotpipe Python Library',
     long_description=long_description,
     long_description_content_type='text/markdown',
     license='MIT',
@@ -89,9 +89,9 @@ setup(
     data_files=data_files,
     zip_safe=True,
     include_package_data=True,
-    entry_points={"console_scripts": ["heimarobot-cli=insightface.commands.insightface_cli:main"]},
+    entry_points={"console_scripts": ["robotpipe-cli=insightface.commands.insightface_cli:main"]},
     install_requires=requirements,
-    headers=['heimarobot/insightface/thirdparty/face3d/mesh/cython/mesh_core.h'],
+    headers=['robotpipe/insightface/thirdparty/face3d/mesh/cython/mesh_core.h'],
     ext_modules=ext_modules,
     include_dirs=numpy.get_include(),
 )

@@ -1,10 +1,10 @@
-# Heimarobot Python Library
+# robotpipe Python Library
 
 ## License
 
-The code of heimarobot Python Library is released under the MIT License. There is no limitation for both academic and commercial usage.
+The code of robotpipe Python Library is released under the MIT License. There is no limitation for both academic and commercial usage.
 
-Heimarobot Python Library is an artificial intelligence learning library, including mainstream advanced artificial intelligence libraries, such as InsightFace, yolov8, paddleocr, etc.
+robotpipe Python Library is an artificial intelligence learning library, including mainstream advanced artificial intelligence libraries, such as InsightFace, yolov8, paddleocr, etc.
 
 
 
@@ -43,13 +43,13 @@ pip install onnxruntime-gpu
 pip安装
 
 ```python
-pip install heimarobot==0.0.3
+pip install robotpipe==0.0.3
 ```
 
 若安装失败，请指定安装路径
 
 ```python
-pip install heimarobot==0.0.3 -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install robotpipe==0.0.3 -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 
@@ -60,10 +60,10 @@ pip install heimarobot==0.0.3 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 ### 导入权重文件
 
-在用户目录下新建`.heimarobot`文件夹
+在用户目录下新建`.robotpipe`文件夹
 
 ```python
-C:\Users\KAI\.heimarobot\models
+C:\Users\KAI\.robotpipe\models
 在models里面放入权重文件
 ```
 
@@ -80,8 +80,8 @@ C:\Users\KAI\.heimarobot\models
 
 
 ```python
-from heimarobot import FaceDetection
-from heimarobot import draw_faces
+from robotpipe import FaceDetection
+from robotpipe import draw_faces
 import cv2 as cv
 import numpy as np
 
@@ -108,7 +108,7 @@ if __name__ == '__main__':
 
 
 ```python
-from heimarobot import FaceRecognition
+from robotpipe import FaceRecognition
 import cv2 as cv
 import numpy as np
 
@@ -147,8 +147,8 @@ if __name__ == '__main__':
 
 
 ```python
-from heimarobot import FaceAttribute
-from heimarobot import draw_faces
+from robotpipe import FaceAttribute
+from robotpipe import draw_faces
 import cv2 as cv
 import numpy as np
 
@@ -177,10 +177,10 @@ if __name__ == '__main__':
 
 
 ```python
-from heimarobot import FaceLandmark
+from robotpipe import FaceLandmark
 import cv2 as cv
 import numpy as np
-from heimarobot import draw_faces,draw_landmarks
+from robotpipe import draw_faces,draw_landmarks
 
 if __name__ == '__main__':
     face_attr = FaceLandmark()
@@ -204,7 +204,7 @@ if __name__ == '__main__':
 
 
 ```python
-from heimarobot import FaceSwapper
+from robotpipe import FaceSwapper
 
 import cv2 as cv
 import numpy as np

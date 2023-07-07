@@ -1,4 +1,4 @@
-from heimarobot import FaceDetection
+from robotpipe import FaceDetection
 import cv2 as cv
 import numpy as np
 
